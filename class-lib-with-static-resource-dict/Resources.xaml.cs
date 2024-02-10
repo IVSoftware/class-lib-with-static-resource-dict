@@ -1,4 +1,4 @@
-namespace class_lib_with_static_resource_dict;
+namespace Library;
 
 public partial class Resources : ResourceDictionary
 {
