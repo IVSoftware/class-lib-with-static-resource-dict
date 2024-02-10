@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Library"
+    x:Class="class_lib_with_static_resource_dict.Resources">
+    
+    <x:String x:Key="DefaultText">My Text</x:String>
+
+    <Style
+        x:Key="LabelExStyle"
+        TargetType="local:LabelEx" ApplyToDerivedTypes="True">
+        <Setter Property="HeightRequest" Value="100" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <Style TargetType="local:RedLabel" BasedOn="{StaticResource LabelExStyle}">
+        <Setter Property="BackgroundColor" Value="LightSalmon" />
+    </Style>
+    <Style TargetType="local:GreenLabel" BasedOn="{StaticResource LabelExStyle}">
+        <Setter Property="BackgroundColor" Value="LightGreen" />
+    </Style>
+</ResourceDictionary>
