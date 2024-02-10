@@ -1,0 +1,1 @@
+# class-lib-with-static-resource-dict
