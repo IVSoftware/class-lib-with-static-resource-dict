@@ -8,16 +8,19 @@
     <x:String x:Key="DefaultText">My Text</x:String>
 
     <Style
-        x:Key="LabelExStyle"
-        TargetType="local:LabelEx" ApplyToDerivedTypes="True">
+        x:Key="BaseStyleEx"
+        TargetType="local:LabelEx" >
         <Setter Property="HeightRequest" Value="100" />
         <Setter Property="VerticalTextAlignment" Value="Center" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
     </Style>
-    <Style TargetType="local:RedLabel" BasedOn="{StaticResource LabelExStyle}">
+    <Style TargetType="local:LabelEx" BasedOn="{StaticResource BaseStyleEx}">
+        <Setter Property="BackgroundColor" Value="WhiteSmoke" />
+    </Style>
+    <Style TargetType="local:RedLabel" BasedOn="{StaticResource BaseStyleEx}">
         <Setter Property="BackgroundColor" Value="LightSalmon" />
     </Style>
-    <Style TargetType="local:GreenLabel" BasedOn="{StaticResource LabelExStyle}">
+    <Style TargetType="local:GreenLabel" BasedOn="{StaticResource BaseStyleEx}">
         <Setter Property="BackgroundColor" Value="LightGreen" />
     </Style>
 </ResourceDictionary>
