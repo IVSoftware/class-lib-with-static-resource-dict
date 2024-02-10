@@ -7,7 +7,4 @@
     HeightRequest="50"
     WidthRequest="150"
     Text="{StaticResource DefaultText}">
-    <Label.Resources>
-        <ResourceDictionary Source="Resources.xaml"/>
-    </Label.Resources>
 </local:LabelEx>
